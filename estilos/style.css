@@ -95,9 +95,6 @@ main > section.conteudo > div.curriculo {
 }
 
 
-
-
-
 /* |||||||||||||||||       Início do FOOTER        |||||||||||||||||||||||||||||*/
 
 
@@ -121,11 +118,13 @@ footer > p {
     padding-top: 25px;
 }
 
-footer > p > a {         /*Link que está dentro do parágrafo do footer*/                    
+footer > p > a {         /*Link que está dentro do parágrafo do footer*/     
+                   
     color: rgb(31, 207, 247);    
 }
 
 footer > p > a:hover {   /*Hover do link dentro do footer */
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(7, 253, 64);   
 }
