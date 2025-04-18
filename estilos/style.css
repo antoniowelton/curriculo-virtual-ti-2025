@@ -143,6 +143,28 @@ main > section.conteudo > div.curriculo {
 }
 
 
+main > section.conteudo > div.curriculo > picture > a > img  {
+    width: 290px;
+    height: 290px;
+    border-radius: 15px;
+      
+}
+
+main > section.conteudo > div.curriculo > picture > a > img:hover {
+
+    transform: translate3d(-10px, -10px, -10px);
+    transition-duration: .4s;
+    box-shadow: 2px 2px 8px var(--cor6);
+    
+}
+
+
+
+
+
+
+
+
 /* |||||||||||||||||       Início do FOOTER        |||||||||||||||||||||||||||||*/
 
 
