@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+/* Declarando as Variáveis (CORES)*/
+
+:root {
+    --cor1:rgb(251, 155, 65);    /* Cor Secundária */
+    --cor2:rgb(3, 42, 78);       /* Cor principal  */
+    --cor3:white;
+    --cor4:blue;
+    --cor5:white;
+    --cor6:rgba(0, 0, 0, 0.400); /* Preto com transparência 0.400 */
+
+}
+
+
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
@@ -16,17 +30,43 @@ body {
 }
 
 header {
-    background-color: rgb(3, 42, 78);
+    background-color: var(--cor2);
     color: white;
     padding: 15px;
     border-radius: 12px 12px 0px 0px;
-    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.400);;
+    box-shadow: 10px 10px 15px  var(--cor6);
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;   
 }
+
+
+
+
+ /* Currículo Virtual*/
+
+#cv {
+    /*background-color: rgb(81, 79, 79);*/
+    margin: 10px -5px 20px;
+    padding: 10px;
+}
+
+header > #cv h1 > a { /* Currículo Virtual*/
+    color:white;  
+    text-decoration: none; 
+}
+
+header > #cv > h1 > a:hover {/* Currículo Virtual : hover */
+    color:var(--cor1);
+}
+
+
+
+
+
+/* Botões do Menu de Navegação */
 
 header > nav {
     border: none;
@@ -36,21 +76,28 @@ header > nav {
 }
 
 header > nav > a {
-    background-color: rgb(255, 255, 255);
-    color: blue;    
+    background-color: white;
+    color:var(--cor1);    
     padding: 10px 15px 10px 15px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
+    font-size: 1.2em;
     text-decoration: none;
     text-align: center;
 }
 
 header > nav > a:hover {
-    background-color: rgba(255, 255, 255, 0.773);
-    color: rgb(6, 10, 245);
-    transition: background-color .4s;    
+    background-color: var(--cor1);
+    color: var(--cor2);
+    transition: background-color .3s;    
 }
+
+/* FIM  ****   Botões do Menu de Navegação *****/
+
+
+
 
 
 main {
@@ -61,7 +108,7 @@ main {
     border-radius: 12px;
 }
 
-.conteudo {
+section.conteudo {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 0px;
@@ -80,14 +127,15 @@ main > section > p {
     text-indent: 20px;
 }
 
+
 main > section.conteudo > div.curriculo {
-    background-color: antiquewhite;
-    padding: 20px;
+    background-color: var(--cor1);
+    padding: 5px;
     margin: 20px;
     width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.450);
+    height: 300px;
+    border-radius: 5%;
+    box-shadow:3px 3px 8px var(--cor6);
 
     display: flex;
     flex-flow: row wrap;
@@ -98,33 +146,35 @@ main > section.conteudo > div.curriculo {
 /* |||||||||||||||||       Início do FOOTER        |||||||||||||||||||||||||||||*/
 
 
+
 footer {
-    background-color: rgb(2, 30, 57);
+    background-color:var(--cor2);
     color: rgb(255, 255, 255);
-    margin: auto;
-    
     width: 100vw;
-    height: 100px;
-    padding: 10px;
-    margin-top: 50px;
+    height: 150px;
+    padding: 30px;
+    margin: 100px 0px;
     text-align: center;
     font-size: 1.3em;       
 }
 
 footer > p {
-    font-family:'Courier New', Courier, monospace, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: auto;
+    font-size: 1em;
     text-align: center;
     padding-top: 25px;
 }
 
-footer > p > a {         /*Link que está dentro do parágrafo do footer*/     
-                   
-    color: rgb(31, 207, 247);    
+   
+
+footer > p > a {         /*Link que está dentro do parágrafo do footer*/                    
+    color:var(--cor1);    
+
 }
 
 footer > p > a:hover {   /*Hover do link dentro do footer */
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(7, 253, 64);   
+    color:var(--cor1);   
 }
