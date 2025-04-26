@@ -7,30 +7,170 @@
 
     <link rel="shortcut icon" href="/imagens/radioactive.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
-
-
 </head>
+
 <body>
+    <style>
+      
+      /* Section que comporta a DIV que fica o IFRAME do Mapa */
+        section.mapa {
+            background-color: var(--cor3);
+            width: 100vw;
+            margin: auto;
+            margin-top: 30px;
+            height: auto;
+            padding: 10px 0px 10px 0px;            
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        /* Div que comporta o IFRAME do Mapa */
+        div#mapa {
+            background-color: var(--cor3);
+            width: 100vw;
+            margin: auto;
+            height: 450px;
+            display: flex;
+            flex: auto;
+            justify-content: center;
+        }
+        /* IFRAME do MAPA */
+        iframe {
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.342);
+        }
+
+        .icons {
+            background-color: blueviolet;
+            margin: auto;
+            height: auto;
+            padding: 1px;
+
+            display: flex;
+            flex: auto;
+            justify-content: space-evenly;
+        }
+
+    </style>
 
     <main>
         <header>
         
-                    <div id="cv">
-                        <h1>
-                            <a href="index.html" target="_self" rel="next">Currículo Virtual</a>
-                        </h1>
-                    </div>
+            <div id="cv">
+                <h1>
+                    <a href="index.html" target="_self" rel="next">Currículo Virtual</a>
+                </h1>
+            </div>        
         
-                <nav>
-                    <a href="index.html" target="_self" rel="next">Home</a>
-                    <a href="portfolio.html" target="_self" rel="next">Portfólio</a>
-                    <a href="curriculo.html" target="_self" rel="next">Currículo</a>
-                    <a href="contato.html" target="_self" rel="next">Contato</a>
-                </nav>
-            </header>
+            <nav>
+                <a href="index.html" target="_self" rel="next">Home</a>
+                <a href="portfolio.html" target="_self" rel="next">Portfólio</a>
+                <a href="curriculo.html" target="_self" rel="next">Currículo</a>
+                <a href="contato.html" target="_self" rel="next">Contato</a>
+            </nav>    
+        </header>
+
+            <section class="conteudo">
+                <div>
+                    <h1>Contato:</h1>
+                </div>
+                <!-- 
+
+                <div class="icons">
+                    <picture>
+                        <img src="imagens/icon-whatsapp.png" alt="WhatsApp">
+                    </picture>
+                    <picture>
+                        <img src="imagens/ico-fone.png" alt="WhatsApp">
+                    </picture>
+                    <picture>
+                        <img src="imagens/icon-localizacao.png" alt="WhatsApp">
+                    </picture>
+                </div>
+
+                -->
+                <div class="icons">
+                    
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">(88) 9 9237 - 4931</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">antonioweltondev@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text"><a href="https://www.linkedin.com/in/antonio-welton-barbosa-silva-5ba495172/" target="_blank" rel="external">/antonio-welton</a></span>
+                        </li>                    
+                        <li>
+                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="text"><a href="https://github.com/antoniowelton" target="_blank" rel="external">/antoniowelton</a></span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Piraquara - PR</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                        
+
+            </section>
+
     </main>
+    
+
+    <section class="mapa">
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14408.777173728875!2d-49.067123790630355!3d-25.46518694419265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1745693021869!5m2!1spt-BR!2sbr" width="560" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </section>
 
 
-    <p>Voltar pra <a href="index.html" target="_self" rel="next">Home</a></p>
+
+    <!-- Section Redes Sociais -->
+
+    <section id="redes-sociais">
+
+        <!-- Tela Home -->
+
+        <a href="index.html" target="_self"><img src="imagens/logo-home.jpg" alt="logo-home"></a> <br>
+
+        <!-- Tela GitHub -->
+
+        <a href="https://github.com/antoniowelton" target="_blank" rel="external"><img src="imagens/logo-github.jpg" alt="logo-github"></a> <br>
+
+        <!-- Tela Instagram -->
+
+        <a href="https://www.instagram.com/ant.welton/" target="_blank" rel="external"><img src="imagens/logo-instagram.jpg" alt="logo-instagram"></a> <br>
+
+        <!-- Tela YouTube  -->           
+
+        <a href="https://www.youtube.com/@CARCAR%C3%81doSERT%C3%83O" target="_blank" rel="external"><img src="imagens/logo-youtube.jpg" alt="logo-youtube"></a> <br>
+
+        <!-- Tela Facebook -->
+
+        <a href="https://www.facebook.com/antoniowelton.barbosasilva/" target="_blank" rel="external"><img src="imagens/logo-facebook.jpg" alt="logo-facebook"></a> <br>
+
+        <!-- Tela Twitter  -->
+
+        <a href="https://www.linkedin.com/in/antonio-welton-barbosa-silva-5ba495172/" target="_blank" rel="external"><img src="imagens/logo-linkedin.jpg" alt="logo-linkedin"></a>
+    </section>
+        
+    <!-- FIM da Section Redes Sociais -->
+
+    
+    <footer>
+        <p>
+            Site criado por <a href="https://github.com/antoniowelton" target="_blank" rel="external" alt="link-github"> <strong> <abbr title="Antonio Welton Barbosa Silva">Antonio Welton</abbr></strong> </a>  em Abril de 2025. <br> Todos os direitos reservados &copy    
+        </p>
+    </footer>
+    
 </body>
 </html>
