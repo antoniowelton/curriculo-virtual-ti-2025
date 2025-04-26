@@ -29,11 +29,13 @@ body {
         
 }
 
-header {
+
+
+header {     /* Main (AZUL) do cabeçalho */
     background-color: var(--cor2);
     color: white;
     padding: 15px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
     box-shadow: 10px 10px 15px  var(--cor6);
 
     display: flex;
@@ -145,7 +147,7 @@ main > section > p {
 /* Montando a Versão Mobile First */
 
 main > section.conteudo > div.curriculo {
-    background-color: var(--cor1);
+    background-color: var(--cor1);    /*var(--cor1)*/
     padding: 2px;
     margin: 10px;
     width: 120px;
@@ -155,7 +157,7 @@ main > section.conteudo > div.curriculo {
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: first center;
 }
 
 
@@ -192,9 +194,9 @@ main > section.conteudo > div.curriculo > picture > a > img:hover {
 
 #download > ol {
     background-color: rgba(255, 255, 255, 0);
-    width: 60vw;
+    width: 100vw;
     display: flex;
-    flex-flow: row wrap-reverse;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
@@ -206,7 +208,7 @@ main > section.conteudo > div.curriculo > picture > a > img:hover {
     margin: 10px;
     padding: 10px;
     color: var(--cor2);
-    text-align: center;
+    text-align: right;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 2px var(--cor6);
 }
