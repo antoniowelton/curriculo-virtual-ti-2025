@@ -37,21 +37,68 @@
             justify-content: center;
         }
         /* IFRAME do MAPA */
+
         iframe {
             border-radius: 10px;
             box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.342);
         }
 
         .icons {
-            background-color: blueviolet;
+            background-color: rgb(255, 255, 255);
             margin: auto;
             height: auto;
-            padding: 1px;
+            padding: 0px;
 
             display: flex;
             flex: auto;
-            justify-content: space-evenly;
+            justify-content: flex-start;
         }
+
+        section.conteudo > div > ul {
+            background-color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--cor2);
+            width: 90vw;
+            text-align: left;
+            list-style-type: none;
+            margin: auto;
+            padding: 15px;
+            line-height: 2em;
+            position: relative;
+
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+           
+        }
+        .text {
+            background-color: rgb(255, 255, 255);
+            margin: 2px 20px 2px 10px;
+            padding: 2px;
+            text-align: left;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+        }
+
+        #contato {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--cor2);
+            margin: 5px 0px 20px 12px;
+            padding: 5px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.485);
+        }
+        
+        a#icone {
+            text-decoration: none;
+            color: var(--cor2);
+        }
+        #icone:hover {
+            color: var(--cor1);
+            font-size: 1.2em;
+            transition-duration: .2s;
+        }
+        
 
     </style>
 
@@ -74,7 +121,7 @@
 
             <section class="conteudo">
                 <div>
-                    <h1>Contato:</h1>
+                    <h1 id="contato">Contato:</h1>
                 </div>
                 <!-- 
 
@@ -86,7 +133,7 @@
                         <img src="imagens/ico-fone.png" alt="WhatsApp">
                     </picture>
                     <picture>
-                        <img src="imagens/icon-localizacao.png" alt="WhatsApp">
+                        <img src="imagens/icon-localizacao.png" alt="Localização">
                     </picture>
                 </div>
 
@@ -94,26 +141,55 @@
                 <div class="icons">
                     
                     <ul>
-                        <li>
-                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                            <span class="text">(88) 9 9237 - 4931</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            <span class="text">antonioweltondev@gmail.com</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                            <span class="text"><a href="https://www.linkedin.com/in/antonio-welton-barbosa-silva-5ba495172/" target="_blank" rel="external">/antonio-welton</a></span>
-                        </li>                    
-                        <li>
-                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                            <span class="text"><a href="https://github.com/antoniowelton" target="_blank" rel="external">/antoniowelton</a></span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <span class="text">Piraquara - PR</span>
-                        </li>
+                        <div id="itens">
+                            <li>  
+                                                             
+                                <span class="text">
+                                    <a id="icone" href="https://api.whatsapp.com/send?phone=5588992374931" target="_blank" rel="external">
+                                        <picture>
+                                            <abbr title="WhatsApp"><img src="imagens/icon-whatsapp.png" alt="WhatsApp"></abbr>
+                                        </picture> (88) 9 9237 - 4931
+                                    </a>
+                                </span>
+                            </li>
+                        </div>
+                        <div id="itens">
+                            <li>                                
+                                <span class="text">
+                                    <a id="icone" href="mailto:antonioweltondev@gmail.com" target="_blank" rel="external"><picture>
+                                        <abbr title="E-mail"><img src="imagens/icon-gmail.png" alt="Localização"></abbr>
+                                    </picture>antonioweltondev@gmail.com</a></span>
+                            </li>
+                        </div>
+                        <div id="itens">
+                            <li>                                
+                                <span class="text">
+                                    <a id="icone" href="https://www.linkedin.com/in/antonio-welton-barbosa-silva-5ba495172/" target="_blank" rel="external"><picture>
+                                        <abbr title="LinkedIn"><img src="imagens/icon-linkedin.png" alt="LinkedIn"></abbr>
+                                    </picture>/antonio-welton</a></span>
+                            </li>
+                        </div>                   
+                        <div id="itens">
+                            <li>                                
+                                <span class="text">
+                                    <a id="icone" href="https://github.com/antoniowelton" target="_blank" rel="external">
+                                        <picture>
+                                        <abbr title="GitHub"><img src="imagens/icon-github.png" alt="GitHub"></abbr>
+                                    </picture>/antoniowelton</a>
+                                </span>
+                            </li>
+                        </div>
+                        <div id="itens">
+                            <li>   
+                                <span class="text">
+                                    <a id="icone" href="#">
+                                        <picture>
+                                            <abbr title="Localização"><img src="imagens/icon-maps.png" target="_blank" alt="Localização"></abbr>
+                                        </picture> Piraquara - PR</a>
+                                </span>
+                                
+                            </li>
+                        </div>
                     </ul>
                 </div>
                 

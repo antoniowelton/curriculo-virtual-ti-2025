@@ -79,20 +79,21 @@ header > nav {
 
 header > nav > a {
     background-color: white;
-    color:var(--cor1);    
+    color:var(--cor2);    
     padding: 5px 5px 5px 5px;
     margin: 10px;
     border-radius: 5px;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
     font-size: 1em;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
 }
 
 header > nav > a:hover {
     background-color: var(--cor1);
-    color: var(--cor2);
+    color:var(--cor2);
     transition: background-color .3s;    
 }
 
