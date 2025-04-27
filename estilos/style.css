@@ -11,7 +11,7 @@
 :root {
     --cor1:rgb(251, 155, 65);    /* Cor Secundária */
     --cor2:rgb(3, 42, 78);       /* Cor principal  */
-    --cor3:white;
+    --cor3:rgb(192, 202, 166);
     --cor4:blue;
     --cor5:white;
     --cor6:rgba(0, 0, 0, 0.400); /* Preto com transparência 0.400 */
@@ -23,7 +23,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
-    background-color: rgb(192, 202, 166);
+    background-color: var(--cor3);
     height: 100vh;
     width: 100vw;
         
@@ -79,20 +79,21 @@ header > nav {
 
 header > nav > a {
     background-color: white;
-    color:var(--cor1);    
-    padding: 10px 15px 10px 15px;
+    color:var(--cor2);    
+    padding: 5px 5px 5px 5px;
     margin: 10px;
     border-radius: 5px;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
 }
 
 header > nav > a:hover {
     background-color: var(--cor1);
-    color: var(--cor2);
+    color:var(--cor2);
     transition: background-color .3s;    
 }
 
