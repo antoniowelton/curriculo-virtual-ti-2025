@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio</title>
 
     <link rel="shortcut icon" href="imagens/radioactive.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 
 </head>
 <body>
+    <style>
+
+        main > section.conteudo > div.curriculo {
+            background-color: var(--cor1);    /*var(--cor1)*/
+            padding: 2px;
+            margin: 30px 30px 40px 30px;
+            width: 310px;
+            height: 460px;
+            border-radius: 5%;
+            box-shadow:3px 3px 8px var(--cor6);
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: first center;
+        }
+
+        #cvirtual {
+            width: 305px;
+            height: 455px;
+            border-radius: 5%;
+
+        }
+    </style>
+    
     <main>
         <header>
         
@@ -26,8 +50,42 @@
                 <a href="contato.html" target="_self" rel="next">Contato</a>
             </nav>
         </header>
-    </main>
 
-    <p>Voltar pra <a href="index.html" target="_self" rel="next">Home</a></p>
+        <section class="conteudo"><!-- Div quadrada com link do curriculo -->
+            <div class="curriculo">
+                <picture>
+                    <a href="https://antoniowelton.github.io/curriculo-online/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens/CURRICULO-TI-2025.png" alt="Currículo">
+                    </a>
+                </picture>                                
+            </div>            
+        </section>
+
+       
+       
+    </main> 
+    
+    
+    
+     <div id="download">  <!-- Botões pra baixar o currículo em PDF e ZIP -->
+            <h3>Baixar Currículo </h3>
+                <ol>
+                    <li> 
+                        <a href="downloads/CURRICULO-TI-2025.pdf" download="CURRICULO-TI-2025" type="aplication/pdf" target="_self" rel="prev">Download PDF</a> 
+                    </li>
+                    <li>
+                        <a href="downloads/CURRICULO-TI-2025.zip" download="CURRICULO-TI-2025" type="aplication/zip" target="_self" rel="prev">Download ZIP</a>
+                    </li>
+                </ol>
+        </div>
+
+    
+
+
+    <footer>
+        <p>
+            Site criado por <a href="https://github.com/antoniowelton" target="_blank" rel="external" alt="link-github"> <strong> <abbr title="Antonio Welton Barbosa Silva">Antonio Welton</abbr></strong> </a>  em Abril de 2025. <br> Todos os direitos reservados &copy    
+        </p>
+    </footer>
 </body>
 </html>
