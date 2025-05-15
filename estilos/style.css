@@ -81,7 +81,7 @@ header > nav > a {
     background-color: white;
     color:var(--cor2);    
     padding: 5px 5px 5px 5px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 5px;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
@@ -94,6 +94,7 @@ header > nav > a {
 header > nav > a:hover {
     background-color: var(--cor1);
     color:var(--cor2);
+    
     transition: background-color .3s;    
 }
 
@@ -107,7 +108,7 @@ main {
     background-color: rgb(22, 28, 99);
     margin: auto;
     padding: 0px;
-    max-width: 90vw;
+    max-width: 85vw;
     border-radius: 12px;
 }
 
@@ -151,8 +152,8 @@ main > section.conteudo > div.curriculo {
     background-color: var(--cor1);    /*var(--cor1)*/
     padding: 2px;
     margin: 10px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 5%;
     box-shadow:3px 3px 8px var(--cor6);
 
@@ -163,9 +164,9 @@ main > section.conteudo > div.curriculo {
 
 
 main > section.conteudo > div.curriculo > picture > a > img  {
-    width: 115px;
-    height: 115px;
-    border-radius: 8px;
+    width: 145px;
+    height: 145px;
+    border-radius: 5%;
       
 }
 
