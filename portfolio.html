@@ -10,6 +10,45 @@
 
 </head>
 <body>
+    <style>
+        main > section.conteudo > div.curriculo {
+            background-color: var(--cor1);    /*var(--cor1)*/
+            padding: 2px;
+            margin: 30px 30px 40px 30px;
+            width: 195px;
+            height: 300px;
+            border-radius: 5%;
+            box-shadow:5px 5px 8px rgba(0, 0, 0, 0.534);
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: first center;
+        }
+        main > section.conteudo > div.curriculo > picture > a > img  {
+            width: 180px;
+            height: 230px;
+            margin-left: 2px;
+            border-radius: 5%;
+      
+        }
+        main > section.conteudo > div.curriculo > picture > a > img:hover {
+
+            transform: translate3d(-5px, -5px, -5px);
+            transition-duration: .4s;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.633);
+    
+        }
+        main > section.conteudo > div.curriculo > p {  /* Parágrafos com os nomes dos projetos */
+            color: var(--cor2);
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            text-shadow: 2px 2px 3px var(--cor6);
+        }
+       
+        
+    </style>
     <main>
         <header>
         
@@ -26,7 +65,96 @@
                 <a href="contato.html" target="_self" rel="next">Contato</a>
             </nav>
         </header>
+
+        <section class="conteudo"><!-- Div quadrada com link do curriculo -->
+            <div class="curriculo">
+                <p>Currículo Online</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/curriculo-online/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens/CURRICULO-TI-2025.png" alt="Currículo">
+                    </a>
+                </picture>                                
+            </div>    
+            <div class="curriculo">
+                <p>Projeto Android</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-android/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/android.png" alt="Projeto Android">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto Cordel</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-cordel/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/cordel.png" alt="Projeto Cordel Moderno">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto Tabela Periódica</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-tabela-periodica/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/tabela_periodica.png" alt="Tabela Periódica dos Elementos Químicos">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto Social Media</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-socialmedia/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/social_media.png" alt="Projeto Social Media">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto Google-Glass</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-google-glass/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/google_glass.png" alt="Projeto Google Glass">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto GitHub</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-site-curso-github/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/Projeto_GitHub.png" alt="Projeto GitHub">
+                    </a>
+                </picture>                                
+            </div> 
+            <div class="curriculo">
+                <p>Projeto Tela de Login</p>
+                <picture>
+                    <a href="https://antoniowelton.github.io/projeto-login/" target="_blank" rel="external">
+                        <img id="cvirtual" src="imagens_portfolio/projeto_login.png" alt="Projeto Tela de Login">
+                    </a>
+                </picture>                                
+            </div> 
+                    
+        </section>
+
     </main>
-    <p>Voltar pra<a href="index.html" target="_self" rel="next"> Home</a></p>
+
+
+        <div id="download">  <!-- Botão voltar-->            
+                <ol>
+                    <li> 
+                        <a href="portfolio.html"  target="_self" rel="prev">Voltar ao Topo</a> 
+                    </li>                    
+                </ol>
+        </div>
+
+     
+            <!-- FOOTER--> 
+    <footer>
+        <p>
+            Site criado por <a href="https://github.com/antoniowelton" target="_blank" rel="external" alt="link-github"> <strong> <abbr title="Antonio Welton Barbosa Silva">Antonio Welton</abbr></strong> </a>  em Abril de 2025. <br> Todos os direitos reservados &copy    
+        </p>
+    </footer>
+
+
+
+
 </body>
 </html>

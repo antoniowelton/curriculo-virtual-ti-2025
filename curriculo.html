@@ -16,14 +16,23 @@
             background-color: var(--cor1);    /*var(--cor1)*/
             padding: 2px;
             margin: 30px 30px 40px 30px;
-            width: 310px;
-            height: 460px;
+            width: 315px;
+            height: 500px;
             border-radius: 5%;
             box-shadow:3px 3px 8px var(--cor6);
 
             display: flex;
             flex-flow: row wrap;
             justify-content: first center;
+        }
+
+        main > section.conteudo > div.curriculo > p {  /* Parágrafos com os nomes dos projetos */
+            color: var(--cor2);
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            text-shadow: 2px 2px 3px var(--cor6);
         }
 
         #cvirtual {
@@ -53,6 +62,7 @@
 
         <section class="conteudo"><!-- Div quadrada com link do curriculo -->
             <div class="curriculo">
+                <p>Currículo Online</p>
                 <picture>
                     <a href="https://antoniowelton.github.io/curriculo-online/" target="_blank" rel="external">
                         <img id="cvirtual" src="imagens/CURRICULO-TI-2025.png" alt="Currículo">
