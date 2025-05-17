@@ -112,27 +112,17 @@ main {
     border-radius: 12px;
 }
 
-section > div {/* DIV - Instituições onde estudei */
+section > div {/* DIV - Instituições onde estudei e Contato*/
     background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 40px;
-}
-
-main > section.conteudo > div > p {
-            color: var(--cor2);
-            text-decoration: none;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 1em;
-            text-shadow: 2px 2px 3px var(--cor6);
-
+    text-align: center;
 }
 
 main > section.conteudo > div.curriculo > p {  /* Parágrafos com os nomes dos projetos */
             color: var(--cor2);
-            margin: 10px;
-            padding-left: 10px;
+            margin: 5px;
+            
             text-decoration: none;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -162,6 +152,15 @@ main > section > p {
 
 /* Montando a Versão Mobile First */
 
+  #h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--cor2);
+            margin: 5px 0px 20px 12px;
+            padding: 5px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.485);
+        }
+
+
 main > section.conteudo > div.curriculo {
     background-color: var(--cor1);    /*var(--cor1)*/
     padding: 2px;
@@ -178,7 +177,7 @@ main > section.conteudo > div.curriculo {
 
 
 main > section.conteudo > div.curriculo > picture > a > img  {
-    width: 180px;
+    width: 185px;
     height: 230px;
     margin: 5px 0px 20px 3px;
     border-radius: 5%;
